@@ -1,0 +1,72 @@
+*{
+    margin: 0;
+    padding: 0;
+    background: 100%;
+}
+body {
+    overflow: hidden;
+    animation: changeColors 10s infinite alternate; /* Change colors every 10 seconds */
+  }
+  
+  @keyframes changeColors {
+    0% {
+      background-color: #7b7272ad; /* Start color */
+    }
+    50% {
+      background-color: #66ccff; /* Middle color */
+    }
+    100% {
+      background-color: #ff9999; /* End color */
+    }
+  }
+
+.container {
+    margin: 100px auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 5px 30px;
+    width: 50vw;
+    align-items: center;
+    border: 1px solid black;
+    border-radius: 12px;
+    height: 70vh;
+    /* background-color: #CDFADB; */
+    /* background-color: #CDFADB; */
+    /* background-color: #083832a9; */
+    background: linear-gradient(to right, #320effc1, #66ccff8d);
+    box-shadow: 0 0  12px;
+}
+label{
+    padding: 12px;
+}
+input{
+    width: 75%;
+    height: 5vh;
+    background-color: beige;
+    border: none;
+    border-radius: 10px;
+}
+button{
+    margin: 12px;
+    width: 25%;
+    height: 6vh;
+    background-color: rgba(0, 0, 0, 0.259);
+    border: none;
+    border-radius: 12px;
+}
+button:hover{
+    
+    background: linear-gradient(to right, #320effc1, #66ccff8d);
+}
+
+table tr  td {
+    border: 1px solid;
+    padding: 5px;
+
+}
+@media(max-width:500px){
+  .container{
+    width: 70%;
+  }
+}
